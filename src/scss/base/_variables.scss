@@ -1,7 +1,7 @@
 // Fuentes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-$fuente_principal: "Poppins", sans-serif;
+$fuente_principal: "Montserrat", sans-serif;
 
 // Tamaño de Media Queries
 $telefono: 480px;
@@ -17,3 +17,12 @@ $negro: #171c26;
 $blanco: #ffffff;
 $ztooltip: 10;
 $zfixed: 100;
+$headerheight: 3.5rem;
+$fontsemibold: 600;
+$blackcolorlighten: #252b37;
+$normalfontsize: 0.953rem;
+$bodycolor: #f0f5ff;
+
+@media screen and (min-width: 1024px) {
+  $normalfontsize: 1rem;
+}
