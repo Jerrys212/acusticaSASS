@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  background-color: v.$negro;
+  background-color: v.$primario;
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
   z-index: var(--z-fixed);
 }
@@ -74,13 +74,13 @@
       }
     }
     &__list {
-      background-color: v.$negro;
+      background-color: v.$primario;
       padding-top: 1rem;
     }
   }
   &__link {
     color: v.$blanco;
-    background-color: v.$negro;
+    background-color: v.$primario;
     font-weight: v.$fontsemibold;
     padding: 1.25rem 1.5rem;
     display: flex;
@@ -126,7 +126,7 @@
   &__sublink {
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
     color: v.$blanco;
-    background-color: v.$negro;
+    background-color: v.$primario;
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -165,6 +165,6 @@
     margin-left: auto;
   }
   &__sublink {
-    background-color: v.$negro;
+    background-color: v.$primario;
   }
 }

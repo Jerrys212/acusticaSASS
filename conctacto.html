@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="build/css/app.css" />
+
+    <title>Responsive dropdown menu - Bedimcode</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="build/img/menulogo.svg" alt="" class="logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Inicio</a></li>
+
+            <li><a href="#" class="nav__link">Sectores</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Conceptos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> Concepto </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> Concepto </a>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    Conceptos
+                    <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink"> Concepto </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink"> Concepto </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink"> Concepto </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="nav__link">Productos</a></li>
+            <li><a href="#" class="nav__link">CLientes Proyectos</a></li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Control de Ruido
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> Control </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> Control </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> Control </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="nav__link">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="contacto__heading">Contacto</h1>
+
+    <div class="container">
+      <div class="contacto__formulario">
+        <div class="contacto__imagen"></div>
+        <div class="contacto__contenido">
+          <h2 class="contacto__heading">Coloca Tus Datos</h2>
+          <input type="text" class="contacto__input" placeholder="Nombre" />
+          <input type="text" class="contacto__input" placeholder="Correo" />
+          <input type="text" class="contacto__input" placeholder="Telefono" />
+          <textarea placeholder="Mensaje" class="contacto__textarea"></textarea>
+          <button class="contacto__boton">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__contacto container">
+        <h2 class="footer__heading">Contacto</h2>
+        <p class="footer__telefono">Telefono: +52 5558615137</p>
+        <p class="footer__direccion">
+          DIR :- Av. Quetzal 84 lt 1, Lomas del Bosque | Cuautitlan Izcalli,
+          Estado de México.
+        </p>
+        <p class="footer__email">EMAIL :- info@acusticaintegral.com.mx</p>
+        <p class="footer__copy">
+          Importaciones Internacionales EKL SA de CV, importador y distribuidor
+          exclusivo en México de Acústica Integral S.L.
+          info@eklinternacional.com todas las imágenes y productos en esta
+          página pertencen a Acústica Integral S.L. www.acusticaintegral.com
+        </p>
+      </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="build/js/main.js"></script>
+  </body>
+</html>
