@@ -1,0 +1,14 @@
+@use "base/variables" as v;
+
+.inicio {
+  margin-top: 3.12rem;
+
+  &__heading {
+    color: v.$primario;
+    text-align: center;
+  }
+
+  &__parrafo {
+    text-align: justify;
+  }
+}
