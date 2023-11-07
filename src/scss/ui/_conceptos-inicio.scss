@@ -1,17 +1,18 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
-.conceptos {
-  margin-top: 1rem;
+.conceptos-inicio {
+  margin-top: 3.12rem;
+  background-color: v.$primario;
+  color: v.$blanco;
   padding: 3rem;
 
   &__heading {
-    color: v.$primario;
     text-align: center;
   }
 }
 
-.concepto {
+.concepto-inicio {
   margin-top: 3rem;
   @include m.desktop {
     display: flex;
@@ -47,14 +48,14 @@
 
     h3 {
       margin: 0;
-      color: v.$primario;
+      color: v.$blanco;
 
       &::after {
         content: "";
         display: block;
         width: 20%;
         height: 4px;
-        background-color: v.$primario;
+        background-color: v.$blanco;
       }
     }
     p {

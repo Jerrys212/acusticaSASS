@@ -1,0 +1,42 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sectores-inicio {
+  margin-top: 3.12rem;
+
+  &__heading {
+    color: v.$primario;
+    text-align: center;
+  }
+
+  &__grid {
+    @include m.grid(1, 1rem);
+    @include m.tablet {
+      @include m.grid(2, 1.2rem);
+    }
+    @include m.desktop {
+      @include m.grid(4, 2rem);
+    }
+  }
+}
+
+.sector-inicio {
+  margin-top: 2.4rem;
+
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__informacion {
+    &-heading {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    &-parrafo {
+      margin-top: 0.5rem;
+      text-align: justify;
+    }
+  }
+}

@@ -2,41 +2,72 @@
 @use "base/mixins" as m;
 
 .sectores {
-  margin-top: 3.12rem;
+  margin-top: 2rem;
 
   &__heading {
-    color: v.$primario;
     text-align: center;
+    color: v.$primario;
   }
 
   &__grid {
-    @include m.grid(1, 1rem);
-    @include m.tablet {
-      @include m.grid(2, 1.2rem);
-    }
+    display: flex;
+    flex-direction: column;
+
     @include m.desktop {
-      @include m.grid(4, 2rem);
+      display: block;
     }
   }
 }
 
 .sector {
-  margin-top: 2.4rem;
-
+  margin: 2rem 0;
   img {
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 3rem;
   }
 
   &__informacion {
     &-heading {
-      margin-top: 0.5rem;
       text-align: center;
+      color: v.$primario;
+      margin: 1rem 0;
     }
-
     &-parrafo {
-      margin-top: 0.5rem;
       text-align: justify;
+      padding: 0;
+      line-height: 1.8;
+    }
+  }
+
+  &__lista {
+    margin-top: 0.8rem;
+  }
+
+  &__elemento {
+    color: v.$primario;
+    font-weight: 900;
+    text-align: justify;
+    margin: 0.4rem 0;
+    &::before {
+      content: "°";
+    }
+  }
+
+  &__boton {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    a {
+      @include m.boton(v.$primario, v.$blanco);
+      font-size: 1rem;
     }
   }
 }
